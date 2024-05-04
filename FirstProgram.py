@@ -205,18 +205,56 @@
 # print(dict.get("name"))
 # print(dict.items())
 
-dict = {
-"firstInfo" : {
-    "name":"Piyush",
-    "age":20,
-    "Gender":"Male"
-},
-"secondInfo" : {
-    "name":"Kashish",
-    "age":19,
-    "Gender":"Female"
-}
-}
-dict.get("firstInfo").update({"age":18});
+# dict = {
+# "firstInfo" : {
+#     "name":"Piyush",
+#     "age":20,
+#     "Gender":"Male"
+# },
+# "secondInfo" : {
+#     "name":"Kashish",
+#     "age":19,
+#     "Gender":"Female"
+# }
+# }
+# dict.get("firstInfo").update({"age":18});
 
-print(dict)
+# print(dict)
+
+
+# Sets in python
+# set = {1,2,4,3}
+# set.add(10)
+# print(set)
+
+# Loops in Python
+
+# While loop
+# count = 1
+# while count<=10:
+#     print("cnt",count)
+#     count+=1
+
+# For loop
+# arr = [1,2,3,4,5]
+
+# for i in arr:
+#     print(i)
+
+# for i in range(1,5,1):
+#     print(arr[i])
+
+# Functions in Python
+# def sum(a,b):
+#     return a+b
+
+# print(sum(1,2))
+
+
+# Recursion in Python
+def fact(n):
+    if(n==0 or n==1):
+        return 1
+    return n*fact(n-1)
+
+print(fact(5))
