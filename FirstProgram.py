@@ -252,9 +252,133 @@
 
 
 # Recursion in Python
-def fact(n):
-    if(n==0 or n==1):
-        return 1
-    return n*fact(n-1)
+# def fact(n):
+#     if(n==0 or n==1):
+#         return 1
+#     return n*fact(n-1)
 
-print(fact(5))
+# print(fact(5))
+
+
+
+# File Input Output in Python
+ 
+# f = open("demo.text")
+# print(f.read())
+
+# f = open("demo1.txt","a")
+# f.write("Hello i am Piyush")
+
+
+# Oops in Python
+ 
+# class Student:
+#     def __init__(self,name):
+#         self.name = name
+#         print("Hello I am",self.name)
+
+#     def fun(self,name):
+#         self.name = name
+#         print("Fuck you",self.name)
+
+
+# s1 = Student("Rajesh")
+# s1.fun("Rajesh")
+
+
+# class Student:
+#     def __init__(self,name,marks): 
+#         avg = marks[0] + marks[1]+ marks[2]
+#         print(name,"marks average is :",avg//3)  
+
+# s1 = Student("Piyush",[10,20,30])
+# s2 = Student("Kashish",[10,50,60])
+# s3 = Student("Tanmay",[10,10,10])
+
+# Static Methods
+# class Student:  
+#     name = "Piyush" 
+#     @staticmethod
+#     def college():
+#         print(Student.name,"you are in a good college")
+
+# s1 = Student()
+# s1.college()
+
+
+# Abstraction in Python
+# class Account:
+#     def __init__(self,acc_no,balance):
+#         self.acc_no = acc_no
+#         self.balance = balance
+#     def debit(self,amount):
+#         self.balance -= amount
+#     def credit(self,amount):
+#         self.balance += amount
+#     def bal(self):
+#         print("Your account balance is :",self.balance)
+    
+# a1 = Account(121,10000)
+# a1.bal()
+# a1.debit(200)
+# a1.bal()
+# a1.credit(2000)
+# a1.bal()
+
+
+
+# del keyword in python
+# class Student:
+#     def name(self,name):
+#         self.name = name
+#         print(self.name)
+    
+# s1 = Student()
+# s1.name("Piyush")
+# del s1
+# s1.name("Piyush")
+
+
+# public, private in python
+# class Bank:
+#     def setter(self,acc_no,bal):
+#         self.acc_no = acc_no
+#         self.__bal = bal
+#     def checkbalance(self):
+#         print(self.__bal)
+# b1 = Bank()
+# b1.setter(121,10000)
+# b1.__bal this will give error
+# b1.checkbalance()
+
+
+# Inheritance in Python
+
+# class Car:
+#     @staticmethod
+#     def start():
+#         print("Started...")
+    
+
+# class Toyota(Car):
+#     def __init__(self):
+#         print("It is a toyota car")
+
+
+# t1 = Toyota()
+# t1.start()
+
+
+# super() method in python
+# class Car:
+#     @staticmethod
+#     def start():
+#         return 'having 4 tyres'
+
+# class Toyota(Car):
+#     def __init__(self):
+#         print("It is a toyota car",super().start())
+
+
+# t1 = Toyota()
+
